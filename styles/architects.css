@@ -4,6 +4,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    
   }
   /* shared styles */
   .display-flex{
@@ -64,6 +65,7 @@
   .nav-link{
     text-decoration: none;
     font-weight: 500;
+    
   }
 
   .navbar, .banner{
@@ -139,9 +141,14 @@
      .teams{
         flex-direction: column;
     }
-    .team-img-container{
-      grid-template-columns: repeat(1, 1fr);
+    .team-img-container, .facts-container{
+      grid-template-columns: 1fr;
     }
+    .facts-container{
+      justify-items: center;
+
+    }
+
     .our-features{
       margin-left: 20px;
     }
@@ -152,6 +159,7 @@
   .teams{
     flex-direction:column;
   }
+
   .our-features{
     margin: 50px auto ;
   }
